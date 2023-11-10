@@ -1,0 +1,80 @@
+$primaryColor: #424874;
+$hoverColor: #A6B1E1;
+$deleteColor: #dc3545;
+
+// #F4EEFF #DCD6F7 #A6B1E1 #424874
+.users-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    border: 1px solid black;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    h4,
+    h5,
+    .img-container,
+    select,
+    button {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    h4 {
+        font-weight: 100;
+        margin-left: 0px;
+        position: relative;
+        right: 30px;
+    }
+
+    select {
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        border: 1px solid #DCD6F7;
+        border-radius: 4px;
+        outline: none;
+        background-color: #fff;
+        cursor: pointer;
+        transition: border-color 0.3s;
+
+        &:hover,
+        &:focus {
+            border-color: $primaryColor;
+        }
+    }
+
+    button {
+        margin-right: 10px;
+        padding: 10px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: $primaryColor;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $hoverColor;
+        }
+    }
+
+    .delete-btn {
+        background-color: $deleteColor;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    .visible {
+        opacity: 1;
+    }
+}

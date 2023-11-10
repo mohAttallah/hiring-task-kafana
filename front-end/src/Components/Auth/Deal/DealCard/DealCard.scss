@@ -1,0 +1,53 @@
+// #F4EEFF #DCD6F7 #A6B1E1 #424874
+
+.deals-card {
+    margin-left: 10px;
+    padding: 10px;
+    color: #424874;
+
+    .card-body,
+    .card {
+        background-color: #A6B1E1;
+    }
+
+  
+    .status {
+        color: #F4EEFF !important;
+    }
+
+    .amount {
+        display: inline;
+        position: relative;
+        left: 15%;
+        color: #F4EEFF !important;
+    }
+
+    .card-des {
+
+        height: 60%;
+    }
+
+
+    button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        // background-color:  // Change to your desired background color
+        color: #424874;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-bottom: 4px solid #424874;
+
+
+        &:hover {
+            color: #ffffff;
+            background-color: #424874; // Change to the hover background color
+        }
+    }
+
+
+}

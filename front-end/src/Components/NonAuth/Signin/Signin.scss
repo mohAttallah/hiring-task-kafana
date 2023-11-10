@@ -1,0 +1,20 @@
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+
+.signin-section {
+    height: 70vh !important;
+    background-image: linear-gradient(to bottom, #a7a7a7, #bcbcbc, #d2d2d2, #e8e8e8, #ffffff) !important;
+    border: unset !important;
+    border-color: transparent !important;
+}

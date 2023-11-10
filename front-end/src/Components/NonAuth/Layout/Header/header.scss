@@ -1,0 +1,33 @@
+.nav-non {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: rgb(62, 255, 28);
+
+    .button-nav,
+    .reflex {
+        padding: 7px;
+        border-radius: 10px;
+        border: white 2px solid;
+    }
+
+    .button-nav {
+        color: white;
+
+        &:hover {
+
+            color: rgb(165, 165, 165);
+        }
+    }
+
+    .reflex {
+        background-color: white;
+        color: black;
+
+        &:hover {
+            color: rgb(165, 165, 165);
+        }
+    }
+}

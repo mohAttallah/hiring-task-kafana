@@ -1,0 +1,56 @@
+// #F4EEFF #DCD6F7 #A6B1E1 #424874
+
+
+
+
+$nav-background-color: #A6B1E1;
+$button-border-color: #A6B1E1;
+$button-color: #424874;
+$button-hover-color: #DCD6F7;
+$reflex-background-color: #F4EEFF;
+$reflex-color: black;
+
+.nav-auth {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: $nav-background-color;
+
+    .button-nav,
+    .reflex {
+        padding: 7px;
+        border: $button-border-color 2px solid;
+    }
+
+    .button-nav {
+        color: $button-color;
+        border-bottom: 1px solid;
+
+        &:hover {
+            color: $button-hover-color;
+        }
+    }
+
+    .reflex {
+        background-color: $reflex-background-color;
+        color: $reflex-color;
+
+        &:hover {
+            color: $button-hover-color;
+        }
+    }
+
+    .signout {
+        background-color: #424874;
+        color: #F4EEFF;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+
+        &:hover {
+            color: #A6B1E1;
+        }
+    }
+}

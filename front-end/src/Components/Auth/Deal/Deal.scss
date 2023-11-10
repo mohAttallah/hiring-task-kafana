@@ -1,0 +1,64 @@
+// #F4EEFF #DCD6F7 #A6B1E1 #424874
+
+
+$gradient-colors: #a7a7a7, #bcbcbc, #d2d2d2, #e8e8e8, #ffffff;
+$primary-color: #424874;
+$hover-color: #ffffff;
+$disabled-background: #ccc;
+$disabled-text: #666;
+
+.deal-page {
+
+    h3 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        color: #424874;
+    }
+
+}
+
+.parent-card-deals {
+    width: 100%;
+    // background-image: linear-gradient(to bottom, $gradient-colors) !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+
+    div {
+        margin-top: 10px;
+    }
+}
+
+.pagination-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        color: $primary-color;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-bottom: 2px solid $primary-color;
+
+        &:hover {
+            color: $hover-color;
+            background-color: $primary-color;
+        }
+
+        &:disabled {
+            background-color: $disabled-background !important;
+            color: $disabled-text;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+    }
+}

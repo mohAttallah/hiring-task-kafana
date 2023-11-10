@@ -1,0 +1,121 @@
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #a7a7a7, #bcbcbc, #d2d2d2, #e8e8e8, #ffffff);
+
+    .hero-section {
+        width: 100%;
+        position: relative;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+        }
+
+        background-image: url('https://images.pexels.com/photos/3184422/pexels-photo-3184422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 20px;
+
+        h4 {
+            position: absolute !important;
+            z-index: 20;
+            top: 85px !important;
+            margin-top: -20px;
+            font-size: 34px;
+            // background-color: rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+        }
+
+    }
+
+    .from-section {
+        box-shadow: 10px 4px 20px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        z-index: 10;
+        top: -200px;
+        // background-color: #fff;
+        background-color: #fff;
+
+        h3 {
+            font-weight: bolder;
+            font-size: 30px;
+            color: #696969;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .comman {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
+            input,
+            select {
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="date"],
+            input[type="url"],
+            input[type="password"] {
+                width: 100%;
+            }
+
+            select {
+                width: 100%;
+            }
+
+            button {
+                margin-top: 20px;
+                background-color: #696969;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+
+            .error-message {
+                color: red;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
